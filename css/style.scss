@@ -1,0 +1,297 @@
+.active {
+    display: block !important;
+}
+.activeBtn {
+    padding: 5px !important;
+}
+.noPadding{
+    padding: 0!important;
+}
+.noMargin{
+    margin: 0!important;
+}
+.bg-primary {
+    background-color: #114479 !important;
+}
+.fromCenter {
+    background-position: 50% 100% !important;
+}
+
+header {
+    
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba($color: #004999, $alpha: 0.2);
+    .logo {
+        margin: 20px 100px;
+    }
+    .search-market {
+        margin: 10px 40px;
+        input {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 1px #ccc;
+            outline: none;
+            padding: 10px;
+            margin: 20px;
+        }
+        i {
+            color: crimson;
+            font-size: 45px;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+    nav {
+        line-height: 100px;
+        a {
+            text-shadow: 0 1px 3px rgb(10, 57, 137);
+            color: #2682e4;
+            text-decoration: none;
+            font-size: 30px;
+            margin: 20px;
+            padding-bottom: 1px;
+            color: #666;
+            display: inline-block;
+            background-image: linear-gradient(rgb(17, 29, 158), rgb(77, 167, 212));
+            background-size: 0% 5px;
+            background-repeat: no-repeat;
+            transition: background-size 0.3s;
+
+            &:hover {
+                color: crimson;
+                background-size: 100% 3px;
+            }
+        }
+        
+    }
+}
+
+
+#content {
+    padding-top: 140px;
+    .row {
+        width: 100%;
+    }
+    .textBox {
+        padding: 100px;
+        h1 {
+            font-size: 5em;
+            color: #004999;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 15px;
+            border-radius: 20px;
+            background-color: #004999;
+            color: #fff;
+        }
+    }
+    .imgBox {
+        text-align: center;
+        padding: 4em;
+    }
+    .home_products {
+        .card {
+            align-items: center;
+            padding: 1%;
+            margin: 2%;
+            box-shadow: 0 0 5px 1px #ccc;
+            img {
+                margin: 20px;
+                padding: 20px;
+            }
+            p {
+                font-size: 30px;
+                text-align: center;
+                color: #004999;
+            }
+        }
+        .shopNow {
+            padding: 100px;
+            h1 {
+                line-height: 1.5em;
+            }
+            button {
+                outline: none;
+                border: none;
+                background-color: #004999;
+                padding: 15px;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .products {
+
+        width: 100%;
+        margin-top: 170px;
+        img {
+            padding: 10px;
+        }
+        .prods_img {
+            padding: 10px;
+            border-right: solid #004999 3px;
+                img {
+                    &:hover {
+                        cursor: pointer;
+                        padding: 8px;
+                    }
+                }
+        }
+        .prods {
+            .prod_detail {
+                display: none;
+                .detail_header {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        animation: zoomImgProd 1s ease;
+                    }
+                    .text_detail {
+                        position: relative;
+                        animation: textShow ease 1s;
+                        padding: 50px;
+                        text-align: left;
+                        h3 {
+                            font-size: 50px;
+                            color: #004999;
+                        }
+                        p {
+                            color: #d52e1f;
+                            font-size: 25px;
+                            text-shadow: 0 0 1px 5px;
+                            font-weight: 700;
+                        }
+                        
+                    }
+                }
+                .ctroller {
+                    text-align: right;
+                    button {
+                        padding: 25px;
+                        margin: 20px;
+                    }
+                    input {
+                        padding: 10px;
+                        border-radius: 10px;
+                        border: #004999 solid;
+                        width: 100px;
+                        outline: none;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .content_banner {
+        position: relative;
+        h1{ 
+            text-shadow: 0 0  5px #333; 
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+            left: 21%;
+            width: 60%;
+            font-size: 80px;
+            color: #fff;
+            top: 60%;
+            position: absolute;
+        }
+    }
+    .content_title {
+        margin:10%;
+        h1 {
+            font-size: 100px;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+#video {
+    margin-top: 200px;
+}
+
+footer {
+    .row {
+        text-align: center;
+        margin: 100px;
+    }
+    .my {
+        background-color: #004999;
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+        padding: 30px;
+        
+    }
+    .infor {
+        text-align: center;
+        margin-bottom: -70px;
+        i {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 50px;
+            font-size: 50px;
+            &.fa-facebook {
+                color: #5ca3ee;
+            }
+            &.fa-facebook:hover {
+                color: #004999;
+                cursor: pointer;
+            }
+            &.fa-instagram-square {
+                color: rgb(237, 30, 137);
+            }
+            &.fa-instagram-square:hover {
+                color: crimson;
+                cursor: pointer;
+            }
+            &.fa-twitter {
+                color: #0e65c3;
+            }
+            &.fa-twitter:hover {
+                color: #2682e4;
+                cursor: pointer;
+            }
+            &.fa-youtube {
+                color: red;
+            }
+            &.fa-youtube:hover {
+                color: #d52e1f;
+                cursor: pointer;
+            }
+
+        }
+        
+    }
+}
+
+@keyframes textShow {
+    from {
+        opacity: 0.5;
+        right: -150px;
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+
+    }
+}
+@keyframes zoomImgProd {
+    from {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
